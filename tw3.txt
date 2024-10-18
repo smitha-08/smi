@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT College</title>
+    <style>
+        /* Basic Reset */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            margin-bottom: 20px;
+            transition: color 0.5s ease;
+        }
+
+        h1:hover {
+            color: #0056b3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-wrapper {
+            perspective: 1000px;
+        }
+
+        .college-image {
+            width: 100%;
+            height: auto;
+            transition: width 2s ease, height 2s ease;
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+            transform: rotateX(0deg);
+        }
+
+        .college-image:hover {
+            width: 90%;
+            height: 90%;
+            transform: rotateY(15deg) rotateX(10deg);
+        }
+
+        .vision-mission {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .vision-mission h2 {
+            font-size: 1.8em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .vision-mission p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to GIT College</h1>
+
+        <div class="image-wrapper">
+            <img src="path-to-your-image.jpg" alt="GIT College Building" class="college-image">
+        </div>
+
+        <div class="vision-mission">
+            <h2>Vision and Mission</h2>
+            <p><strong>Vision:</strong> To be a globally recognized institution fostering innovation, learning, and leadership in the field of technology and management.</p>
+            <p><strong>Mission:</strong> To provide quality education and research opportunities in a supportive environment that enhances student potential and contributes to the advancement of society.</p>
+        </div>
+    </div>
+</body>
+</html>
